@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header'
+import {Header, ListOfNotes, Trackers, Footer} from './components'
+import { Routes ,Route } from 'react-router-dom';
 
 const links = [
     {
@@ -17,8 +18,13 @@ const links = [
 const App= () => {
 
   return (
-    <div className='main'>
+    <div className='main flex w-full justify-between flex-col' style={{height: '100vh'}}>
       <Header links={links}/>
+        <Routes>
+            <Route path={'/'} element={<Trackers/>}/>
+            <Route path={'/list'} element={<ListOfNotes/>}/>
+        </Routes>
+        <Footer/>
     </div>
   );
 }

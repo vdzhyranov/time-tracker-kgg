@@ -13,7 +13,7 @@ type headerProps = {
 
 const Header = ({links}: headerProps) => {
     return (
-        <div className=' mx-auto px-10 mb-8 bg-slate-200'>
+        <div className='px-10 mb-8 bg-slate-200'>
             <div className='container border-b w-full inline-block border-blue-400 py-8'>
                 <div className='float-left text-blue ml-4 font-bold  text-3xl'>
                     V.DZHY

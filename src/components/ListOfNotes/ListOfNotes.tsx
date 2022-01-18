@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 const ListOfNotes = () =>  {
     return (
-        <div>ListOfNote</div>
+        <div>a</div>
     );
 }
 

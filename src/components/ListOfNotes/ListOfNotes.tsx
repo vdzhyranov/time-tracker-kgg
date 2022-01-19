@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {UsersContext} from "../../hooks/useGetUsersContext";
+import ListNotes from "../../globalComponents/ListNotes";
 
 
 const ListOfNotes = () =>  {
+    const {notes} = useContext(UsersContext);
+
     return (
-        <div>a</div>
+           <ListNotes list={notes}/>
     );
 }
 
